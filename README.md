@@ -37,4 +37,7 @@ présenter à FishEye lors de notre prochaine réunion avec les clients. Tu sera
 > Bonne chance et montre-moi ce que tu sais faire !
 > 
 > Amanda
-> Cheffe de Projet @Techasite
+> Cheffe de Projet @Techasite  
+  
+Vous commencez par ouvrir les maquettes pour avoir une idée de ce qui doit être fait :  
+![img](https://user.oc-static.com/upload/2022/10/14/16657380159236_Index%20%281%29.png)
