@@ -41,3 +41,4 @@ présenter à FishEye lors de notre prochaine réunion avec les clients. Tu sera
   
 Vous commencez par ouvrir les maquettes pour avoir une idée de ce qui doit être fait :  
 ![img](https://user.oc-static.com/upload/2022/10/14/16657380159236_Index%20%281%29.png)
+Lorsque vous commencez à regarder les maquettes, vous recevez un message instantané de Zoé, une développeuse senior que vous admirez beaucoup. Elle vous a encadré et a effectué un grand nombre de vos révisions de code :
