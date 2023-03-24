@@ -41,4 +41,12 @@ présenter à FishEye lors de notre prochaine réunion avec les clients. Tu sera
   
 Vous commencez par ouvrir les maquettes pour avoir une idée de ce qui doit être fait :  
 ![img](https://user.oc-static.com/upload/2022/10/14/16657380159236_Index%20%281%29.png)
-Lorsque vous commencez à regarder les maquettes, vous recevez un message instantané de Zoé, une développeuse senior que vous admirez beaucoup. Elle vous a encadré et a effectué un grand nombre de vos révisions de code :
+Lorsque vous commencez à regarder les maquettes, vous recevez un message instantané de Zoé, une développeuse senior que vous admirez beaucoup. Elle vous a encadré et a effectué un grand nombre de vos révisions de code :  
+
+> Zoé : Salut ! Amanda m'a dit qu'elle t'avait chargé de développer le premier prototype du projet FishEye, c'est bien ça ?
+> 
+> Moi : Oui, je viens de commencer !
+> 
+> Zoé : Tant mieux pour toi ! J'avais commencé ce projet, mais on m'a passé sur autre chose. Je pense que tu apprendras beaucoup au cours du processus. Je voulais juste te donner un petit conseil technique. Amanda a mentionné que FishEye a des vidéos et des photos pour le photographe. Pour ça il faudra que tu utilises un pattern Factory Method, ça sera idéal pour créer les media en distinguant les vidéos des photos.
+> 
+> Moi : OK, je vais utiliser le pattern Factory Method. Merci encore !
