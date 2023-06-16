@@ -12,10 +12,10 @@ export class Photographer {
     }
 
     countLikes(){
-        let res = 0;
+        this.likes = 0;
         this.media.forEach(element => {
-            res += element.likes;
+            this.likes += element.likes;
         })
-        return res;
+        return this.likes;
     }
 }

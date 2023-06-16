@@ -1,15 +1,18 @@
-async function getPhotographers() {
-    // Ceci est un exemple de données pour avoir un affichage de photographes de test dès le démarrage du projet, 
-    // mais il sera à remplacer avec une requête sur le fichier JSON en utilisant "fetch".
-    let pickPhotographers = import('../../data/photographers.json', {
-        assert: { type: 'json'}
-    });
-    let photographers = (await pickPhotographers).default.photographers;
-    // et bien retourner le tableau photographers seulement une fois récupéré
-    return ({photographers})
+import { photographerFactory } from "../factories/photographer.js";
+
+async function getPhotographers(){
+
+    try {
+        const response = await fetch("data/photographers.json");
+        const data = await response.json();
+        return data.photographers;
+    } catch (error) {
+        console.error(error);
+    }
 }
 
 async function displayData(photographers) {
+    console.log(photographers);
     const photographersSection = document.querySelector(".photographer_section");
 
     photographers.forEach((photographer) => {
@@ -17,12 +20,11 @@ async function displayData(photographers) {
         const userCardDOM = photographerModel.getUserCardDOM();
         photographersSection.appendChild(userCardDOM);
     });
-};
+}
 
 async function init() {
     // Récupère les datas des photographes
-    const { photographers } = await getPhotographers();
-    displayData(photographers);
-};
+    displayData(await getPhotographers());
+}
 
 init();

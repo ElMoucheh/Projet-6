@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2f567fdf59.js" crossorigin="anonymous"></script>
     <title>Fisheye - photographe </title>
   </head>
   <body>
@@ -12,26 +13,51 @@
       <img src="assets/images/logo.png" class="logo" />
     </header>
     <main id="main">
-      <div class="photograph-header">
-        <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
-      </div>
+      
     </main>
+    <div id="carousel">
+      <input id="closeCarrousel" type="image" aria-label="Fermer le carroussel" class="close" src="assets/icons/close.svg">
+      <div class="carousel-container">
+        <img src="" id="carousel-item" alt="">
+      </div>
+      <button id="back" aria-label="Photo précédente" class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+      <button id="next" aria-label="Photo suivante" class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
     <div id="contact_modal">
 			<div class="modal">
 				<header>
+          <div></div>
           <h2>Contactez-moi</h2>
           <img src="assets/icons/close.svg" onclick="closeModal()" />
         </header>
-				<form>
-					<div>
-						<label>Prénom</label>
-						<input />
-					</div>
-          <button class="contact_button">Envoyer</button>
-				</form>
+				<form id="contact-form">
+          <div>
+              <label for="prenom">Prénom:</label>
+              <input type="text" id="prenom" name="prenom" aria-label="Votre prénom">
+          </div>
+          
+          <div>
+              <label for="nom">Nom:</label>
+              <input type="text" id="nom" name="nom" aria-label="Votre nom">
+          </div>
+          
+          <div>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" aria-label="Votre adresse mail">
+          </div>
+          
+          <div>
+              <label for="message">Votre message:</label>
+              <input id="message" name="message" aria-label="Votre message"/>
+          </div>
+          
+          <button class="contact_button" type="submit" aria-label="Envoyer le formulaire">Envoyer</button>
+      </form>
 			</div>
 		</div>
     <script type="module" src="scripts/pages/photographer.js"></script>
+    <script type="module" src="scripts/factories/profile.js"></script>
+    <script src="scripts/factories/carrousel.js"></script>
     <script src="scripts/utils/contactForm.js"></script>
   </body>
 </html>

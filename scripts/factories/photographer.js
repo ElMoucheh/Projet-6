@@ -1,4 +1,4 @@
-function photographerFactory(data) {
+const photographerFactory = (data) => {
     const { name, id, city, country,  tagline, price, portrait } = data;
 
     const picture = `assets/photographers/${portrait}`;
@@ -7,9 +7,11 @@ function photographerFactory(data) {
     function getUserCardDOM() {
         const a = document.createElement( 'a' );
         a.setAttribute("href", link);
+        a.setAttribute('aria-label', 'Lien vers le profil de ' + name);
 
         const img = document.createElement( 'img' );
         img.setAttribute("src", picture);
+        img.setAttribute('alt', 'Photo de ' + name);
 
         const h2 = document.createElement( 'h2' );
         h2.textContent = name;
@@ -35,3 +37,5 @@ function photographerFactory(data) {
     }
     return { name, picture, getUserCardDOM }
 }
+
+export {photographerFactory};
