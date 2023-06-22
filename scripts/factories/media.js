@@ -8,6 +8,7 @@ export function rebuildMedia(media){
 
         const cardMedia = document.createElement("div");
         cardMedia.setAttribute("class", "cardMedia");
+        cardMedia.setAttribute("tabindex", i + 1);
 
         let mediaDisplay;
 

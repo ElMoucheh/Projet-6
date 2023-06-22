@@ -1,6 +1,3 @@
-//import { Photographer } from "../models/photographer.js";
-//import { Picture } from "../models/picture.js";
-//import { Video } from "../models/video.js";
 import { profileFactory } from "../factories/profile.js";
 import { rebuildMedia } from "../factories/media.js";
 import { factory } from "../factories/factory.js"
