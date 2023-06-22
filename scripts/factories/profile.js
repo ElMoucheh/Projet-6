@@ -95,7 +95,11 @@ export function profileFactory(photographer){
     }
 
     function createCardmedia(media, index){
+
+        let picOrVid = media.image != null ? "Image" : "Vidéo";
+
         const cardMedia = document.createElement("div");
+        cardMedia.setAttribute("aria-label", `${picOrVid} nommée ${media.title}`);
         cardMedia.setAttribute("class", "cardMedia");
         cardMedia.setAttribute("tabindex", index + 1);
 

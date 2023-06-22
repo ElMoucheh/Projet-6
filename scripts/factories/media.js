@@ -6,7 +6,10 @@ export function rebuildMedia(media){
 
     for (let i = 0; i < media.length; i++) {
 
+        let picOrVid = media[i].image != null ? "Image" : "Vidéo";
+
         const cardMedia = document.createElement("div");
+        cardMedia.setAttribute("aria-label", `${picOrVid} nommée ${media[i].title}`);
         cardMedia.setAttribute("class", "cardMedia");
         cardMedia.setAttribute("tabindex", i + 1);
 
