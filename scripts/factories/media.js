@@ -11,7 +11,7 @@ export function rebuildMedia(media){
         const cardMedia = document.createElement("div");
         cardMedia.setAttribute("aria-label", `${picOrVid} nommée ${media[i].title}`);
         cardMedia.setAttribute("class", "cardMedia");
-        cardMedia.setAttribute("tabindex", i + 1);
+        cardMedia.setAttribute("tabindex", i + 1);      
 
         let mediaDisplay;
 
@@ -56,8 +56,6 @@ export function rebuildMedia(media){
         
         divMedia.appendChild(cardMedia);
     }
-
-    
 
     return divMedia;
 }
